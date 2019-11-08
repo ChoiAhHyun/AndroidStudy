@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:weightSum="10">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="bottom|center"
+        android:textSize="40sp"
+        android:padding="50dp"
+        android:visibility="visible"
+        android:text="hello"/>
+    <TextView
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="bottom|center"
+        android:textSize="40sp"
+        android:padding="50dp"
+        android:visibility="visible"
+        android:text="hello"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher_background"/>
+    <EditText
+        android:id="@+id/edt"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:hint="abc"
+        android:textColorHint="@color/colorAccent"/>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:text="button"
+        android:enabled="true"/>
+    <CheckBox
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:checked="true"/>
+    <Switch
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:checked="false"/>
+</LinearLayout>
