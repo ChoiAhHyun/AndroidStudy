@@ -13,7 +13,7 @@
 ~~ 매주 3~5번을 반복합니다 ~~
 ```
 
-# 2st Week
+# 2nd Week
 - View의 개념과 기본 속성
 - View - TextView, EditText, ImageView, Button, CheckBox, Switch
 - Layout - LinearLayout, RelativeLayout, GridLayout, ConstraintLayout, FrameLayout, DrawerLayout
@@ -21,4 +21,16 @@
 [Homework] 로그인 액티비티 만들어오기
 1. TextView 1, EditText 2, ImageView 1, Button 1을 포함
 2. ID, Password 값을 미리 String으로 지정해두고, 일치할 경우 로그인 성공, 아닐 경우 실패 토스트 띄우기
+```
+
+# 3rd Week
+- Activity와 Fragment - LifeCycle, Context, Intent, Bundle
+- Intent로 Activity 간 데이터 전달, onActivityResult 메서드
+- Fragment와 TabLayout, ViewPager
+```
+[Homework] Intent로 데이터 전달, TabLayout, ViewPager 심화 예제
+1. 한 Activity에 Button 하나씩 포함, Activity 2개 만들기
+2. 데이터를 보내고 확인할 수 있는 View 자유롭게 구성
+2. TabLayout과 ViewPager 연결하기!
+    Hint: viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
 ```
