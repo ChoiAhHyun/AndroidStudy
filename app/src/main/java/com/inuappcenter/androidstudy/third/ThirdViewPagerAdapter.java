@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+//어뎁터란 하나의 객체로써 보여지는 뷰와 그 뷰에 올릴 데이터를 연결하는 일종의 다리 역할.
 public class ThirdViewPagerAdapter extends FragmentPagerAdapter {
     private int tabCount;
     public ThirdViewPagerAdapter(@NonNull FragmentManager fm, int behavior) {
