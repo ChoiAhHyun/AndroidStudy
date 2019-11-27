@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quest2.ThirdMainActivity">
+
+    <TextView
+        android:id="@+id/ma_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="메인 액티비티"
+        android:textSize="40sp" />
+    <Button
+        android:id="@+id/bt_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="서브로"
+        android:textSize="30sp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
