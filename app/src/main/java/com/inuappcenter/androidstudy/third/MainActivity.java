@@ -13,7 +13,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.tabs.TabLayout;
 import com.inuappcenter.androidstudy.R;
 
-public class ThirdMainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
     TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class ThirdMainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ThirdMainActivity.this, ThirdSubActivity.class);
+                Intent intent = new Intent(MainActivity.this, SubActivity.class);
                 intent.putExtra("textIn", textView.getText().toString());
                 startActivityForResult(intent, 100);
             }
@@ -42,15 +42,15 @@ public class ThirdMainActivity extends AppCompatActivity {
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
                 switch (tab.getPosition()) {
                     case 0:
-                        transaction.replace(R.id.fragment_container, new ThirdFirstFragment())
+                        transaction.replace(R.id.fragment_container, new FirstFragment())
                                 .commit();
                         break;
                     case 1:
-                        transaction.replace(R.id.fragment_container, new ThirdSecondFragment())
+                        transaction.replace(R.id.fragment_container, new SecondFragment())
                                 .commit();
                         break;
                     case 2:
-                        transaction.replace(R.id.fragment_container, new ThirdThirdFragment())
+                        transaction.replace(R.id.fragment_container, new ThirdFragment())
                                 .commit();
                         break;
                     default:

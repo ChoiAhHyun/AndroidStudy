@@ -5,10 +5,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-public class ThirdViewPagerAdapter extends FragmentPagerAdapter {
+public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     private int tabCount;
-    public ThirdViewPagerAdapter(@NonNull FragmentManager fm, int behavior) {
+    public ViewPagerAdapter(@NonNull FragmentManager fm, int behavior) {
         super(fm, behavior);
         tabCount = behavior;
     }
@@ -18,13 +18,13 @@ public class ThirdViewPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                ThirdFirstFragment fragment1 = new ThirdFirstFragment();
+                FirstFragment fragment1 = new FirstFragment();
                 return fragment1;
             case 1:
-                ThirdSecondFragment fragment2 = new ThirdSecondFragment();
+                SecondFragment fragment2 = new SecondFragment();
                 return fragment2;
             case 2:
-                ThirdThirdFragment fragment3 = new ThirdThirdFragment();
+                ThirdFragment fragment3 = new ThirdFragment();
                 return fragment3;
             default:
                 return null;

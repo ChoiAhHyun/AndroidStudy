@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.inuappcenter.androidstudy.R;
 
-public class SecondActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
     String id = "dd", pass = "sss";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class SecondActivity extends AppCompatActivity {
                 String str = editText.getText().toString();
                 textView.setText(str);
 
-                Toast.makeText(SecondActivity.this, "메시지", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "메시지", Toast.LENGTH_SHORT).show();
             }
         });
     }

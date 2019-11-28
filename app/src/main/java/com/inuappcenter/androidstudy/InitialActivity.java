@@ -8,15 +8,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.inuappcenter.androidstudy.second.SecondActivity;
-import com.inuappcenter.androidstudy.third.ThirdMainActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class InitialActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_initial);
         Log.d("test", "ss");
 
         Button buttonSecond = findViewById(R.id.btn_second);
@@ -30,12 +28,19 @@ public class MainActivity extends AppCompatActivity {
             Intent intent;
             switch (view.getId()){
                 case R.id.btn_second: {
-                    intent = new Intent(MainActivity.this, SecondActivity.class);
+                    intent = new Intent(InitialActivity.this, com.inuappcenter.androidstudy.second.MainActivity.class);
                     startActivity(intent);
+                    break;
                 }
                 case R.id.btn_third: {
-                    intent = new Intent(MainActivity.this, ThirdMainActivity.class);
+                    intent = new Intent(InitialActivity.this, com.inuappcenter.androidstudy.third.MainActivity.class);
                     startActivity(intent);
+                    break;
+                }
+                case R.id.btn_fourth: {
+                    intent = new Intent(InitialActivity.this, com.inuappcenter.androidstudy.fourth.MainActivity.class);
+                    startActivity(intent);
+                    break;
                 }
             }
         }
