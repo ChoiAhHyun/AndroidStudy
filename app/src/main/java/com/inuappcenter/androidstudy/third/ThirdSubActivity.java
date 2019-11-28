@@ -19,6 +19,7 @@ public class ThirdSubActivity extends AppCompatActivity {
 
         final EditText editText = findViewById(R.id.edt_sub);
         Intent intent = getIntent();
+
         intent.getStringExtra("textIn");
 
 
