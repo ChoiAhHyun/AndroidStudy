@@ -34,3 +34,11 @@
 2. TabLayout과 ViewPager 연결하기!
     Hint: viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
 ```
+
+# 4th Week
+- JAVA 기본 개념 
+    - 클래스(class), 생성자(constructor)
+    - 상속(extend)
+    - static, final
+    - 인터페이스(interface), 리스너(listener)
+    - 오버로딩(overloading)과 오버라이딩(overriding)
