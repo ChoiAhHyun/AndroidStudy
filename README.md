@@ -42,3 +42,15 @@
     - static, final
     - 인터페이스(interface), 리스너(listener)
     - 오버로딩(overloading)과 오버라이딩(overriding)
+
+# 5th Week
+- DrawerLayout - 기본(NavigationView), 커스텀(layout, fragment)
+- RecyclerView 기본 개념과 사용법
+```
+[Homework] Drawer와 RecyclerView 예제
+다음과 같은 내용으로 구성된 Activity 2개를 포함한 화면 만들어오기!
+Activity1: DrawerLayout 사용
+Drawer - Button 1, TextView 1 포함, Button은 클릭시 이벤트 있어야 함
+Main - RecyclerView 포함, item 클릭 시 Activity2 호출
+Activity2: TextView 1 포함, 이 TextView에 RecyclerView의 item값 띄우기
+```

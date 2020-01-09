@@ -19,8 +19,10 @@ public class InitialActivity extends AppCompatActivity {
 
         Button buttonSecond = findViewById(R.id.btn_second);
         Button buttonThird = findViewById(R.id.btn_third);
+        Button buttonFifth = findViewById(R.id.btn_fifth);
         buttonSecond.setOnClickListener(onClickListener);
         buttonThird.setOnClickListener(onClickListener);
+        buttonFifth.setOnClickListener(onClickListener);
     }
     View.OnClickListener onClickListener = new View.OnClickListener() {
         @Override
@@ -37,8 +39,8 @@ public class InitialActivity extends AppCompatActivity {
                     startActivity(intent);
                     break;
                 }
-                case R.id.btn_fourth: {
-                    intent = new Intent(InitialActivity.this, com.inuappcenter.androidstudy.fourth.MainActivity.class);
+                case R.id.btn_fifth: {
+                    intent = new Intent(InitialActivity.this, com.inuappcenter.androidstudy.fifth.MainActivity.class);
                     startActivity(intent);
                     break;
                 }

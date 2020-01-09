@@ -20,6 +20,8 @@
         <activity android:name=".third.MainActivity" />
         <activity android:name=".third.SubActivity" />
         <activity android:name=".fourth.MainActivity" />
+        <activity android:name=".fifth.MainActivity" />
+        <activity android:name=".fifth.SubActivity" />
     </application>
 
 </manifest>

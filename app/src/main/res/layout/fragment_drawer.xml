@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorAccent">
 
     <TextView
         android:layout_width="wrap_content"
@@ -16,6 +16,6 @@
         android:id="@+id/btn_click"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="click1"/>
+        android:text="click2"/>
 
 </LinearLayout>
